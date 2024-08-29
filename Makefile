@@ -113,7 +113,7 @@ GH := $(abspath $(TOOLS_BIN_DIR)/$(GH_BIN))
 # Registry / images
 TAG ?= dev
 ARCH ?= $(shell go env GOARCH)
-ALL_ARCH = amd64 arm arm64 ppc64le s390x
+ALL_ARCH = amd64
 REGISTRY ?= ghcr.io
 ORG ?= simplysoft
 CONTROLLER_IMAGE_NAME := cluster-api-provider-rke2
